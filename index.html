@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #111111;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+        }
+        #name{
+            background-color: #222222;
+            padding: 20px;
+        }
+        button{
+            border-radius: 20px;
+            background-color: #222222;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #eeeeee;
+            box-shadow: 1px 3px #010101;
+            border: none;
+        }
+        button:hover{
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="name">
+        click button to print...
+    </h1>
+    <button class="btn">Print Name</button>
+</body>
+<script>
+    myName = document.querySelector('#name')
+    button = document.querySelector('.btn')
+    
+    button.addEventListener('click', () => {
+        myName.innerText = 'Morenike Oyewole'
+    })
+</script>
+</html>
